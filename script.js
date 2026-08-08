@@ -1,9 +1,7 @@
-/* ===================== SISTEMA DE PESTAÑAS ===================== */
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('.tab-section');
 
 function activateTab(id) {
-  // Quita "active" de todos los links y secciones
   navLinks.forEach(link => link.classList.remove('active'));
   sections.forEach(sec => sec.classList.remove('active-section'));
 
@@ -14,16 +12,14 @@ function activateTab(id) {
 
 navLinks.forEach(link => {
   link.addEventListener('click', (e) => {
-    e.preventDefault(); // evita el salto brusco del navegador
-    const id = link.getAttribute('href').substring(1); // quita el "#"
+    e.preventDefault();
+    const id = link.getAttribute('href').substring(1); 
     activateTab(id);
   });
 });
 
-// Al cargar la página, muestra "Inicio" por defecto
 activateTab('inicio');
 
-/* ===================== CARRUSEL (solo en la sección Inicio) ===================== */
 const track = document.getElementById('carouselTrack');
 const slides = track.children;
 const dotsContainer = document.getElementById('dots');
