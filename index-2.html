@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+  <div class="inner">
+
+    <h1>WANDERER</h1>
+
+    <nav>
+      <a href="#inicio" class="nav-link active">Inicio</a>
+      <a href="#stats" class="nav-link">Stats</a>
+      <a href="#historia" class="nav-link">Historia</a>
+      <a href="#galeria" class="nav-link">Galeria</a>
+    </nav>
+
+    <section id="inicio" class="tab-section">
+
+      <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <img src="img/img1.jpg" alt="Wanderer 1">
+          <img src="img/img2.jpg" alt="Wanderer 2">
+          <img src="img/img3.jpg" alt="Wanderer 3">
+        </div>
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="dots" id="dots"></div>
+      </div>
+
+      <div class="info">
+        <p>Wanderer es un personaje de Genshin Impact. Anteriormente conocido como Scaramouche, fue creado como un prototipo de marioneta por la Arconte Electro, Ei. Tras un largo viaje lleno de conflictos y cambios, decide abandonar su antigua identidad para comenzar una nueva vida bajo el nombre de Wanderer.</p>
+        <p>Es un personaje de cinco estrellas que utiliza el elemento Anemo y un catalizador como arma. Destaca por su movilidad aérea y su estilo de combate rápido.</p>
+      </div>
+
+    </section>
+
+    <section id="stats" class="tab-section">
+      <div class="stats-layout">
+
+        <div class="stats-left">
+
+          <div class="icon-row">
+            <img src="img/WANDERER TRANS.jpg" alt="Icono 1">
+          </div>
+        </div>
+
+        <div class="stats-right info">
+          <div class="stat-item">
+            <h3>Arma</h3>
+            <p>Catalizador.</p>
+          </div>
+          <div class="stat-item">
+            <h3>Elemento</h3>
+            <p>Anemo.</p>
+          </div>
+          <div class="stat-item">
+            <h3>Rol</h3>
+            <p>DPS principal.</p>
+          </div>
+          <div class="stat-item">
+            <h3>Habilidad Elemental</h3>
+            <p>Permite levitar y atacar desde el aire con mayor movilidad.</p>
+          </div>
+          <div class="stat-item">
+            <h3>Habilidad Definitiva</h3>
+            <p>Lanza una poderosa ráfaga de viento que inflige daño Anemo en un área.</p>
+          </div>
+          <div class="stat-item">
+            <h3>Estilo de juego</h3>
+            <p>Especialista en combate aéreo, ataques rápidos y alta movilidad, ideal para jugadores que prefieren un estilo de juego ágil y ofensivo.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="historia" class="tab-section">
+      <div class="historia-box">
+        <h2 class="historia-title">HISTORIA</h2>
+        <p>Wanderer, antes conocido como Scaramouche y el Balladeer, es un personaje cuya historia gira en torno a la búsqueda de identidad y propósito. Fue creado por la Arconte Electro, Ei, como un prototipo para albergar la Gnosis Electro. Sin embargo, al demostrar emociones y sensibilidad, Ei decidió sellar su poder y dejarlo vivir libremente en lugar de convertirlo en un arma. Despertó sin comprender su existencia y, tras sufrir varias traiciones y pérdidas, desarrolló una profunda desconfianza hacia la humanidad.</p>
+        <p>Tras los acontecimientos de Inazuma y Sumeru, intentó convertirse en un dios utilizando la Gnosis Electro, pero fue derrotado con la ayuda del Viajero y de Nahida.</p>
+        <img src="img/historia banner.png" alt="Wanderer" class="historia-image" width="480" height="300">
+      </div>
+    </section>
+
+    <section id="galeria" class="tab-section">
+      <div class="galeria-box">
+        <div class="galeria-grid">
+          <img src="img/gal1.png" alt="Wanderer arte 1" width="300" height="300">
+          <img src="img/gal2.png" alt="Wanderer arte 2" width="300" height="300">
+          <img src="img/gal3.png" alt="Wanderer arte 3" width="300" height="300">
+          <img src="img/gal4.png" alt="Wanderer arte 4" width="300" height="300">
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
